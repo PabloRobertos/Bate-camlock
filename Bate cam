@@ -1,6 +1,6 @@
 -- By ezterminals on discord/Tiktok Give credits or raided.
 -- Beta, You may think this is bad, But Test it.
--- Version:TerminalWare V5
+-- Version:TerminalWare V1
 -- Change Sets if you like.
 -- Sets for ping 100 - 0
 -- 3%534:8;@“#
@@ -9,37 +9,17 @@
 -- If you see the owner change at any point it will be me
 -- This is the original script and it always will be.
 -- Coped, Ezterminals on TikTok follow me.
-
-getgenv().Bate = {
-    Enabled = true,
-Prediction = 0.1738,
-    HorizontalPrediction = 0.174,
-    VerticalPrediction = 0.1271,
-    XPrediction = 0.1639,
-    YPrediction = 0.1271,
-    Smoothness = {
-        Enabled = true,
-        Amount = 7,
-        Shake = true,
-        ShakeValue = 2,
-        AimPart = "LowerTorso",
-    },
-    ThirdPerson = true,
-    FirstPerson = true,
-    TeamCheck = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua",true))()
+getgenv().targetstrafe = {
+    speed = 12, -- Speed of rotation
+    height = 3,  -- Vertical offset from the target
+    size = 5,  -- Radius of the circle around the target
 }
 
-local users = {"User1", "User2", "User3"}
+local SelectedPart = "HumanoidRootPart" -- don’t change
+local Prediction = true
+local PredictionValue = 0.1622895033
+local NoGroundShots = true
+AutoPred = true
 
-local JumpFunction = {
-    Enabled = true,
-    PredictionAmount = 0.01,
-    JumpFunctionAimParts = {"LowerTorso"}
-}
-
-getgenv().HitChance = {
-    Enabled = true,
-    Amount = 300
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Creatingtesting/BateOnTopOBFUSCATED/main/bate"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Creatingtesting/BateTargetAim/main/TargetAimByezterminals/And/hauntedyards_"))()
